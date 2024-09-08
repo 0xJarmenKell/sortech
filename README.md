@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## For testing in your local machine: 
 
-make sure that git is downloaded i your machine then type in your terminal: git clone https://github.com/0xJarmenKell/sortech
+make sure that git is downloaded in your machine then type in your terminal: git clone https://github.com/0xJarmenKell/sortech
 
 ## Development server
 
