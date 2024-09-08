@@ -4,7 +4,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
-## For testing in you local machine: 
+## For testing in your local machine: 
 
 make sure that git is downloaded i your machine then type in your terminal: git clone https://github.com/0xJarmenKell/sortech
 
