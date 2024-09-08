@@ -1,0 +1,274 @@
+
+.card-custom {
+    position: relative;
+    background-color: #8A74F9;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-family: 'Noto Sans Arabic', sans-serif; 
+
+}
+.card-custom .btn {
+    background-color: transparent;
+    
+}
+.card-custom .btn:hover {
+    background-color: #5b21b6;
+    transition: .5s all;
+}
+.card-custom .qr-code {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.send-btn {
+    color: #ffffff;
+    border: 1px solid #f1f1f1f1;
+}
+.send-btn:hover {
+    color: #fff;
+    border: 1px solid #5b21b6;
+}
+
+.trash-icon {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    border: none;
+}
+
+.ticket-link {
+    margin-left: 65px;
+    text-align: center;
+    width: 70%;
+}
+
+.ticket-link-img {
+  position: absolute;
+  top: 75px;
+  left: 105px;
+  cursor: pointer;
+}
+
+
+.card-discount {
+    font-size: 18px;
+    font-family: 'Noto Sans Arabic', sans-serif; 
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .card-custom input {
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .card-custom .ticket-link-img{
+        top: 75px; 
+        left: 80px;
+    }
+
+    .card-custom .ticket-link {
+        margin-left: 55px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card-custom .trash-icon{
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    .card-custom input {
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+
+    .card-custom h6 {
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .card-custom .ticket-link-img{
+        top: 70px; 
+        left: 40px;
+    }
+
+    .card-custom .ticket-link {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .card-custom .trash-icon img{
+        position: absolute;
+        top: 7px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .card-custom h6 {
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .card-custom input {
+        font-size: 12px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+
+    .card-custom .ticket-link-img{
+        top: 65px; 
+        left: 25px;
+    }
+
+    .card-custom .ticket-link {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-custom .trash-icon{
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+    } 
+    .card-custom h6 {
+        font-size: 14px;
+        font-family: "Noto Sans Arabic", sans-serif;
+    }
+
+    .card-custom input {
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .card-custom .ticket-link-img{
+        top: 73px; 
+        left: 40px;
+    }
+
+    .card-custom .ticket-link {
+        margin-left: 20px;
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width: 470px) and (max-width: 767px) {
+    .card-custom .trash-icon{
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        width: 30px;
+        height: 30px;
+    } 
+    .card-custom h6 {
+        font-size: 14px;
+        font-family: "Noto Sans Arabic", sans-serif;
+    }
+
+    .card-custom input {
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .card-custom .ticket-link-img{
+        top: 73px; 
+        left: 145px;
+    }
+
+    .card-custom .ticket-link {
+        margin-left: 95px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 470px) { 
+    .card-custom h6 {
+        font-size: 16px;
+    }
+
+    .card-custom input {
+        font-size: 16px;
+    }
+
+    .card-custom .ticket-link-img{
+        top: 75px; 
+        left: 95px;
+    }
+
+    .card-custom .ticket-link {
+        margin-left: 55px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .card-custom input {
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .card-custom .ticket-link-img{
+        top: 75px; 
+        left: 85px;
+    }
+
+    .card-custom .ticket-link {
+        margin-left: 55px;
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 412px) {
+    .card-custom input {
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .card-custom .ticket-link-img{
+        top: 75px; 
+        left: 85px;
+    }
+
+    .card-custom .ticket-link {
+        margin-left: 55px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 327px) {
+
+    qr-code{
+        width: 80px;
+    }
+}

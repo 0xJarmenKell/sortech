@@ -1,0 +1,154 @@
+.header {
+    font-family: 'Noto Sans Arabic';
+    font-weight: 500;
+}
+
+.switch-button {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #444;
+    background-color: #fff;
+}
+
+.edit-btn {
+    background: #ffff;
+    color: #000;
+    border: #626466;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.edit-btn:hover {
+    border: #000000;
+}
+
+.chart-container {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    text-align: right;
+}
+
+.card-custom {
+    position: relative;
+    background-color: #8a2be2;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-family: 'Noto Sans Arabic', sans-serif; 
+
+}
+.card-custom .btn {
+    background-color: transparent;
+    
+}
+.card-custom .btn:hover {
+    background-color: #5b21b6;
+    transition: .5s all;
+}
+.card-custom .qr-code {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+.graph-button {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    background: #FAFAFA;
+    color: #000;
+    border: #626466;
+    font-size: 14px;
+    padding: 8px 12px;
+    font-weight: 500;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+
+@media screen and (max-width: 991px) {
+    .graph-button {
+        position: absolute;
+        top: 35px;
+        left: 30px;
+        background: #FAFAFA;
+        color: #000;
+        border: #626466;
+        font-size: 14px;
+        padding: 8px 12px;
+        font-weight: 500;
+        font-family: 'Noto Sans Arabic', sans-serif;
+        cursor: pointer;
+    }
+}
+
+@media  screen and (max-width: 414px) {
+    .graph-button {
+        position: absolute;
+        top: 35px;
+        left: 12px;
+        background: #FAFAFA;
+        color: #000;
+        border: #626466;
+        font-size: 14px;
+        padding: 8px 6px;
+        font-weight: 500;
+        font-family: 'Noto Sans Arabic', sans-serif;
+        cursor: pointer; 
+    }
+}
+
+@media  screen and (max-width: 384px) {
+    .graph-button {
+        position: absolute;
+        top: 80px;
+        left: 250px;
+        background: #FAFAFA;
+        color: #000;
+        border: #626466;
+        font-size: 14px;
+        padding: 8px 6px;
+        font-weight: 500;
+        font-family: 'Noto Sans Arabic', sans-serif;
+        cursor: pointer;         
+    }
+}
+
+
+@media  screen and (max-width: 355px) {
+    .graph-button {
+        position: absolute;
+        top: 80px;
+        left: 200px;
+        background: #FAFAFA;
+        color: #000;
+        border: #626466;
+        font-size: 14px;
+        padding: 8px 6px;
+        font-weight: 500;
+        font-family: 'Noto Sans Arabic', sans-serif;
+        cursor: pointer;         
+    }
+}
+
+
+@media screen and (min-width: 150px) and (max-width: 327px) {
+    .graph-button {
+        position: absolute;
+        top: 110px;
+        left: 10px;
+        background: #FAFAFA;
+        color: #000;
+        border: #626466;
+        font-size: 14px;
+        padding: 8px 6px;
+        font-weight: 500;
+        font-family: 'Noto Sans Arabic', sans-serif;
+        cursor: pointer;    
+    }
+}

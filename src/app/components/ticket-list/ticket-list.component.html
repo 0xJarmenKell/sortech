@@ -1,0 +1,71 @@
+<div class="search-container py-4">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center">
+        <button type="button" class="btn btn-table">حجز تذكرة جديدة</button>
+        <span class="table-list-text">مفعلة</span>
+        <p-inputSwitch class="table-list-switch p-inputswitch" [(ngModel)]="checked"/>
+      </div>
+    <div class="col-md-6  sub-container" [ngClass]="{'hidden': isMobile}">
+      <img pTooltip="فلتر" tooltipPosition="top" class="table-list-icon mx-1" src="../../../assets/Group 1000011201.svg" alt="icon-btn" style="cursor: pointer;">
+      <img pTooltip="ألاعدادات" tooltipPosition="top" class="table-list-icon mx-1" src="../../../assets/settingwithbck.svg" alt="icon-btn" style="cursor: pointer;">
+      <p-iconField iconPosition="right" class="table-list-search-field">
+        <input class="table-list-search" type="text" pInputText [(ngModel)]="searchQuery" (ngModelChange)="onSearchQueryChange()" placeholder="بحث عن" />
+        <p-inputIcon styleClass="pi pi-search" />
+      </p-iconField>
+      <h2 class="ticket-list-title">مبيعات التذاكر</h2>
+     </div>
+  </div>
+</div>
+  <p-table 
+    [value]="filteredTickets" 
+    [globalFilterFields]="['number', 'value', 'user']" 
+    [rows]="4" 
+    [paginator]="true" 
+    [rowsPerPageOptions]="[4,8,16]"
+    [filterDelay]="0"
+    sortMode="multiple"
+    [globalFilter]="searchQuery"
+    class="container-fluid"
+  >
+    <ng-template pTemplate="header">
+      <tr> 
+          <th style="  font-family: 'Noto Sans Arabic', sans-serif;
+            font-weight: 600;"  class="text-center">التذكرة</th>
+          <th style="  font-family: 'Noto Sans Arabic', sans-serif;
+            font-weight: 600;" >عدد مرات الشراء</th>
+          <th style="  font-family: 'Noto Sans Arabic', sans-serif;
+            font-weight: 600;" >عدد الأشخاص</th>
+          <th style="  font-family: 'Noto Sans Arabic', sans-serif;
+            font-weight: 600;" >السينمات</th>
+          <th pSortableColumn="value"><p-sortIcon field="value" class="px-2"></p-sortIcon> قيمة التذكرة</th>
+          <th style="  font-family: 'Noto Sans Arabic', sans-serif;
+            font-weight: 600;"  pSortableColumn="number"><p-sortIcon field="number" class="px-2"></p-sortIcon> رقم التذكرة</th>
+        <th style="  font-family: 'Noto Sans Arabic', sans-serif;
+            font-weight: 600; text-align: center;" >المستخدم</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-ticket>
+      <tr>
+        <td style="  font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: 600;"><img pTooltip="تحميل التذكرة" 
+          tooltipPosition="top" (click)="downloadFile()" class="px-2" src="../../../assets/download.svg" alt="icon"> {{ticket.ticket}} <img pTooltip="تعديل بيانات" 
+          tooltipPosition="top" class="px-2" src="../../../assets/briefwthbck.svg" alt="icon"></td>
+          <td style="  font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: 600;" >{{ticket.purchases}}</td>
+          <td style="  font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: 600;" >{{ticket.persons}}</td>
+          <td style="  font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: 600;"  pInputText 
+          pTooltip="{{ticket.seat}}" 
+          tooltipPosition="left">{{ticket.seat}}</td>
+          <td style="  font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: 600;" >{{ticket.value}}</td>
+          <td style="  font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: 600;" >{{ticket.number}}</td>
+        <td style="  font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: 600;" >{{ticket.user}} <img [src]="ticket.img" width="32" style="vertical-align: middle"></td>
+      </tr>
+    </ng-template>
+  </p-table>
+  
+  

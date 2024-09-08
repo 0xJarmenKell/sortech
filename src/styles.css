@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import 'ngx-toastr/toastr';
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #F3F5F7;
+    font-family: 'Inter', sans-serif;
+}
+
+/* LTR styles */
+body[dir="ltr"] {
+    /* LTR-specific styles here */
+    text-align: left;
+  }
+  
+  /* RTL styles */
+  body[dir="rtl"] {
+    /* RTL-specific styles here */
+    text-align: right;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+  /* LTR styles */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  /* RTL styles */
+  body[dir="rtl"] .flex-container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  
+

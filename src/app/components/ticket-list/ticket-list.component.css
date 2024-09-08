@@ -1,0 +1,202 @@
+ .sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  } 
+
+.ticket-list-title {
+  font-family: 'Noto Sans Arabic', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.table-list-search {
+  font-family: 'Noto Sans Arabic', sans-serif;
+  text-align: right;
+  width: 200px;
+  padding: 8px;
+  padding-right: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.table-list-search-field {
+  margin-right: 15px;
+}
+
+.btn-table {
+ color: aliceblue;
+ background-color: #8A74F9;
+ font-family: 'Noto Sans Arabic', sans-serif;
+ font-weight: Bold;
+}
+
+.btn-table:hover{
+  color: aliceblue;
+  background-color: #5b21b6;
+  font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: Bold;
+  transition: .5s all;
+}
+
+.table-list-switch {
+  margin-left: 15px;
+}
+
+.table-list-text {
+  margin-left: 10px;
+  color: #9C9D9F;
+  font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: Bold;
+}
+
+
+
+/* Slider color */
+.p-inputswitch-slider {
+  background-color:  #8A74F9 !important; /* Custom slider color */
+}
+
+@media screen and (max-width: 768px) {
+
+  .search-container .row >*{
+    width: 50%;
+  }
+
+  .table-list-switch {
+    margin-left: 5px;
+  }
+  
+  .table-list-text {
+    margin-left: 10px;
+    color: #9C9D9F;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-weight: Bold;
+  }
+  .ticket-list-title {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    padding-top: 10px;
+  }
+  
+  .table-list-search {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    text-align: right;
+    width: 100px;
+    padding: 8px;
+    padding-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .table-list-search-field {
+    margin-right: 15px;
+  }
+  
+  .btn-table {
+   color: aliceblue;
+   background-color: #8A74F9;
+   font-family: 'Noto Sans Arabic', sans-serif;
+   padding: 8px;
+   font-size: 12px;
+   width: 100px; 
+   font-weight: Bold;
+  }
+
+  .table-list-icon {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .btn-table {
+    color: aliceblue;
+    background-color: #8A74F9;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    padding: 6px;
+    font-size: 10px;
+    width: 60px; 
+    font-weight: Bold;
+   }
+   .table-list-text {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #9C9D9F;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-weight: Bold;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.ticket-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ticket-list-item {
+  margin: 10px;
+  width: calc(33.33% - 20px);
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .ticket-list-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .ticket-list-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    padding: 10px;
+  }
+  .ticket-list-title {
+    font-size: 18px;
+  }
+  p-table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sub-container {
+    display: none;
+  }
+} */
+
+
+/* Default styles for large screens */
+
+/* Media query for medium screens (768px - 992px) */
+/* Media query for small screens (576px - 768px) */

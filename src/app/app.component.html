@@ -1,0 +1,44 @@
+<html [dir]="direction" lang="en">
+<div class="container pt-4">
+  <!-- header -->
+   <div class="d-flex justify-content-between align-items-center mb-3 header">
+       <button pTooltip="تعديل التذكرة" 
+       tooltipPosition="left" class="btn edit-btn">
+           تعديل
+           <img src="../assets/edit.svg" alt="edit icon">
+    </button>
+    <button type="button" (click)="toggleDirection()" class="btn btn-light">تغير الأتجاه</button>
+    <div class="d-flex align-items-center">
+    <h5 class="align-self-end pt-2 px-2">
+     تذكرة رقم 2342
+    </h5>
+     <img pTooltip="الرجوع" 
+     tooltipPosition="bottom" style="cursor: pointer;" src="../assets/right-arrow.svg" alt="right-arrow">
+    </div>
+   </div>
+   <div class="row">
+      <!-- left box /// Ticket Card Component -->
+    <div class="col-md-4">
+       <app-ticket-card></app-ticket-card>
+    </div>
+      <!-- right box with chart /// + stats-graph component -->
+    <div class="col-md-8">
+        <div class="chart-container mb-3">
+         <h6 style="font-family: 'Noto Sans Arabic', sans-serif, monospace;">
+          إحصائيات إستخدام القسيمة
+         </h6>
+         <p style="cursor: pointer; color: rgb(204, 198, 198);">
+         &DownArrow; 05 يوليو, 2023 - 05 أغسطس, 2023
+         </p>
+         <button pTooltip="التوقيت" tooltipPosition="top" class="btn graph-button d-flex align-items-center"><i class="bi bi-arrow-down-short
+          " style="font-size: 18px; color: rgb(182, 178, 178);"></i>سنويا</button>
+            <app-stats-graph></app-stats-graph>
+        </div>
+    </div>
+   </div>
+</div>
+<!-- Table-list-Component -->
+<div class="container pt-4">
+    <app-ticket-list></app-ticket-list>
+</div>
+</html>

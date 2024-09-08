@@ -1,0 +1,33 @@
+<div class="card-custom mb-3">
+  <div class="d-flex justify-content-center mb-3">
+    <button class="btn btn-danger btn-sm trash-icon">
+        <img pTooltip="حذف" 
+        tooltipPosition="left" src="../assets/trash.svg" alt="trash-icon">
+    </button>
+   <h6>
+    عرض التذكرة الخاصة بالفيلم
+   </h6>
+  </div>
+  <div class="mb-3">
+    <img pTooltip="نسخ" 
+    tooltipPosition="left" class="ticket-link-img" src="../assets/copy.png" (click)="showSuccess()" (click)="copyTextToClipboard(yourInputValue)" alt="copy-img">
+   <input class="form-control text-center ticket-link" readonly="" type="text" value="{{yourInputValue}}"/>
+  </div>
+  <p>
+   فعال حتى 15 يوليو 2023
+  </p>
+  <div class="mb-3">
+    <qrcode [qrdata]="'Your data string'" [width]="120" [errorCorrectionLevel]="'M'"></qrcode>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+   <button pTooltip="شارك التذكرة" 
+   tooltipPosition="top" class="btn send-btn">
+    مشاركة
+    <img src="../assets/send-2.svg" alt="send-icon" >
+   </button>
+   <div class="card-discount">
+    <p>خصم</p>
+   <p>25%</p>
+   </div>
+  </div>
+ </div>
